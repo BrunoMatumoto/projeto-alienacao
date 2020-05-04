@@ -1,0 +1,50 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.about-inside {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  font-family: $font-family-baloo;
+  .about-inside-left {
+    p {
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.row {
+  max-width: 920px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-inside {
+    max-width: 320px;
+  }
+}
